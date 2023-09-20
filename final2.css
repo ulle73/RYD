@@ -314,3 +314,13 @@ p {
         transform: translateX(300%);
     }
 }
+
+
+
+.ring {
+    position: absolute;
+    height: 55%;
+    left: 20px;
+    opacity: 0.;
+    
+}

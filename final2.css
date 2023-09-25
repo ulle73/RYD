@@ -2,18 +2,14 @@
     /* border: 1px solid red; */
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
+    color: white;
+    text-decoration: none;
 }
 
 body {
-    
     background: radial-gradient(#271f03, #000000);
 }
 
-p {
-    font-size: 12px;;
-    color: white;;
-}
 
 /* HEADER */
 .rubrik {
@@ -24,7 +20,7 @@ p {
     overflow: hidden;
     position: relative;
     margin-top: -10px;
-   
+
 }
 
 /* HEADER ANIMATION */
@@ -50,8 +46,6 @@ p {
     100% {
         transform: translateX(100%);
     }
-
- 
 }
 
 /* SHINE-effekt */
@@ -63,9 +57,6 @@ p {
     mask-size: 800%;
     -webkit-mask-position: 0;
     mask-position: 0;
-    
-  
-  
 }
 
 
@@ -84,8 +75,7 @@ p {
     margin-left: auto;
     justify-content: space-between;
     letter-spacing: 12px;
-   margin-top: 20px;
-    
+    margin-top: 20px;
 }
 
 .twitter,
@@ -153,7 +143,7 @@ p {
     display: block;
     color: white;
     position: absolute;
-    left: 50px; 
+    left: 50px;
     margin-top: 30px;
     opacity: 0;
     transition: 3s ease-in-out;
@@ -178,15 +168,13 @@ p {
     opacity: 0;
     transition: 3s ease-in-out;
     align-self: flex-end;
-    
 }
 
 
-.post:hover  p {
+.post:hover p {
     opacity: 1;
     transition: 2s ease-in-out;
     font-size: 16px;
-    
 }
 
 .post:hover .image-post {
@@ -195,7 +183,7 @@ p {
     height: 175px;
 }
 
-.post:hover  h3 {
+.post:hover h3 {
     opacity: 1;
     transition: 2s ease-in-out;
     transform: scale(120%);
@@ -222,12 +210,12 @@ p {
     transition: 3s ease-in-out;
 }
 
-.old-post-container:hover  {
+.old-post-container:hover {
     border: 1px solid #af8901;
     transition: 2s ease-in-out;
     margin-left: 5px;
     overflow: hidden;
-   
+
 }
 
 .old-post-container:hover .searchbar {
@@ -235,14 +223,14 @@ p {
     transition: 2s ease-in-out;
     opacity: 1;
     height: 40px;
-    
+
 }
 
 
 .old-post-container:hover h3 {
     opacity: 1;
     transition: 2s ease-in-out;
-    transform: scale(120% );
+    transform: scale(120%);
 }
 
 
@@ -260,7 +248,7 @@ p {
     flex: 1;
     margin-bottom: 20px;
     border: none;
-    
+
 }
 
 .old-post-bottom p {
@@ -272,7 +260,6 @@ p {
 
 
 .old-post-top h3 {
-
     color: white;
     opacity: 0.3;
     transition: 3s ease-in-out;
@@ -316,6 +303,7 @@ p {
     0% {
         transform: translateX(-300%);
     }
+
     100% {
         transform: translateX(300%);
     }
@@ -323,10 +311,64 @@ p {
 
 
 
-.ring {
-    position: absolute;
-    height: 55%;
-    left: 20px;
-   
-    
+/* INLÄGG */
+
+.wrap {
+    display: flex;
+}
+
+.box-container-post {
+    flex: 3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+h3 {
+    text-align: center;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.top-pic {
+    margin-right: 20px;
+    margin-top: 20px;
+    flex: 1;
+    height: 300px;
+}
+
+.top {
+    flex: 5;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 65%;
+    font-size: large;
+}
+
+.middle {
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.bottom {
+    margin: 10px;
+    flex: 1.5;
+    width: 60%;
+    font-size: large;
+}
+
+.bottom-pic {
+    flex: 0.5;
+    height: 200px;
+    max-width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }

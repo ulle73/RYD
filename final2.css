@@ -283,6 +283,7 @@ body {
     position: relative;
     height: 100px;
     margin-top: 10px;
+    justify-content: center;
 }
 
 /* FOOTER-effect */
@@ -308,6 +309,27 @@ body {
         transform: translateX(300%);
     }
 }
+
+
+
+.footer a {
+    color: transparent;
+    transition: 3s ease-in-out;
+    margin-left: 20px;
+}
+
+.footer i {
+    color: gray;
+    transition: 3s ease-in-out;
+}
+
+.footer:hover a,
+.footer:hover i  {
+    color: white;
+    transition: 2s ease-in-out;
+}
+
+
 
 
 
